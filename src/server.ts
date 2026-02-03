@@ -1,4 +1,4 @@
-import app  from '@/app';
+import app  from '@/index';
 import { connectDB } from '@/database/mongodb';
 import dotenv from 'dotenv';
 
