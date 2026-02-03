@@ -1,21 +1,21 @@
 import { Router } from 'express';
-import { createUserController } from '@/controllers/user.controller';
-import { loginController } from '@/controllers/auth.controller';
-import { authMiddleware } from '@/middlewares/auth.middleware';
-import { changePasswordController } from '@/controllers/change.controller';
-import { createProductController } from './controllers/product/product.controller';
-import { createCategoryController } from './controllers/category/category.controller';
-import { createIngredientController } from './controllers/ingredient/ingredient.controller';
-import { createSizeController } from './controllers/size/size.controller';
-import { createTableController } from './controllers/table/table.controller';
-import { createWaiterController } from './controllers/waiter/waiter.controller';
-import { createTipController } from './controllers/tip/createTip.controller';
-import { createOrderController } from './controllers/order/order.controller';
-import { createItemController } from './controllers/item/item.controller';
-import { listItemsByOrderController } from './controllers/item/listbyorder.controller';
-import { listAllorderController } from './controllers/order/listAlorder.controller';
-import { listCategoryController } from './controllers/category/listcategory.controller';
-import { listProductController } from './controllers/product/listproduct.controller';
+import { createUserController } from './controllers/user.controller.js';
+import { loginController } from './controllers/auth.controller.js';
+import { authMiddleware } from './middlewares/auth.middleware.js';
+import { changePasswordController } from './controllers/change.controller.js';
+import { createProductController } from './controllers/product/product.controller.js';
+import { createCategoryController } from './controllers/category/category.controller.js';
+import { createIngredientController } from './controllers/ingredient/ingredient.controller.js';
+import { createSizeController } from './controllers/size/size.controller.js';
+import { createTableController } from './controllers/table/table.controller.js';
+import { createWaiterController } from './controllers/waiter/waiter.controller.js';
+import { createTipController } from './controllers/tip/createTip.controller.js';
+import { createOrderController } from './controllers/order/order.controller.js';
+import { createItemController } from './controllers/item/item.controller.js';
+import { listItemsByOrderController } from './controllers/item/listbyorder.controller.js';
+import { listAllorderController } from './controllers/order/listAlorder.controller.js';
+import { listCategoryController } from './controllers/category/listcategory.controller.js';
+import { listProductController } from './controllers/product/listproduct.controller.js';
 
 const routes = Router();
 
