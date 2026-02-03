@@ -4,7 +4,7 @@ import routes from "./routes.js";
 import dotenv from "dotenv";
 import path from 'path';
 import type {Request, Response,NextFunction} from 'express'
-import { connectDB } from '@/database/mongodb';
+import { connectDB } from "./database/mongodb.js";
 
 dotenv.config();
 

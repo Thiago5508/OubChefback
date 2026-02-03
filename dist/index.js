@@ -3,7 +3,7 @@ import cors from "cors";
 import routes from "./routes.js";
 import dotenv from "dotenv";
 import path from 'path';
-import { connectDB } from '@/database/mongodb';
+import { connectDB } from "./database/mongodb.js";
 dotenv.config();
 const app = express();
 app.use(cors());
