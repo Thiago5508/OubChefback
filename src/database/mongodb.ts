@@ -1,43 +1,16 @@
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
+import mongoose from "mongoose";
 
-dotenv.config();
-
-const MONGO_URI = process.env.MONGO_URI as string;
-
-if (!MONGO_URI) {
-  throw new Error('❌ MONGO_URI não definido');
-}
-
-// garante tipagem correta
-const globalWithMongoose = global as typeof globalThis & {
-  mongoose: {
-    conn: mongoose.Mongoose | null;
-    promise: Promise<mongoose.Mongoose> | null;
-  };
+let isConnected = false;
+export const connectDB = async () => {
+  if (isConnected) return;
+  try {
+    await mongoose.connect(process.env.MONGO_URI!,{
+    serverSelectionTimeoutMS:50000
+    });
+    isConnected = true;
+    console.log("MongoDB conectado!");
+  } catch (error) {
+    console.error("Erro ao conectar no MongoDB", error);
+    process.exit(1);
+  }
 };
-
-if (!globalWithMongoose.mongoose) {
-  globalWithMongoose.mongoose = {
-    conn: null,
-    promise: null,
-  };
-}
-
-export async function connectDB() {
-  if (globalWithMongoose.mongoose.conn) {
-    return globalWithMongoose.mongoose.conn;
-  }
-
-  if (!globalWithMongoose.mongoose.promise) {
-    globalWithMongoose.mongoose.promise =
-      mongoose.connect(MONGO_URI);
-  }
-
-  globalWithMongoose.mongoose.conn =
-    await globalWithMongoose.mongoose.promise;
-
-  console.log('✅ MongoDB conectado');
-
-  return globalWithMongoose.mongoose.conn;
-}
