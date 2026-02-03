@@ -15,16 +15,18 @@ import { createItemController } from './controllers/item/item.controller';
 import { listItemsByOrderController } from './controllers/item/listbyorder.controller';
 import { listAllorderController } from './controllers/order/listAlorder.controller';
 import { listCategoryController } from './controllers/category/listcategory.controller';
+import { listProductController } from './controllers/product/listproduct.controller';
 
 const routes = Router();
 
 //user
 routes.post('/createuser', createUserController);
 routes.post('/auth/login', loginController);
-routes.put('/auth/changepassword', authMiddleware, changePasswordController)
+routes.put('/auth/changepassword', authMiddleware, changePasswordController);
 
 //products
-routes.post('/product/create',authMiddleware, createProductController)
+routes.post('/product/create',authMiddleware, createProductController);
+routes.get('/product/list',authMiddleware,listProductController);
 
 //category
 routes.post("/category/create", authMiddleware, createCategoryController);

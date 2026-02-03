@@ -1,8 +1,7 @@
 import type { Request, Response } from "express";
+import { listProductService } from "@/services/product/listproduct.service";
 
-import { listcategoryService } from "@/services/category/listcategory.service";
-
-export async function listCategoryController(req: Request, res: Response) {
+export async function listProductController(req: Request, res: Response) {
   const user = req.user?._id;
   const active = true as boolean
 
@@ -10,7 +9,7 @@ export async function listCategoryController(req: Request, res: Response) {
     return res.status(401).json({ error: "Unauthorized" });
   }
   try {
-    const items = await listcategoryService(active,user);
+    const items = await listProductService (active,user);
 
     return res.status(200).json(items);
   } catch (err) {
