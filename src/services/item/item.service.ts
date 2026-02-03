@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { Item } from "@/models/item.model";
+import { Item } from "../../models/item.model.js";
 
 export async function createItemService(data: {
   user: string;

@@ -5,7 +5,7 @@ export declare function createOrderService(data: {
     total?: number;
     waiter?: string;
     tip?: number;
-}): Promise<import("mongoose").Document<unknown, {}, import("@/models/order.model").IOrder, {}, import("mongoose").DefaultSchemaOptions> & import("@/models/order.model").IOrder & Required<{
+}): Promise<import("mongoose").Document<unknown, {}, import("../../models/order.model.js").IOrder, {}, import("mongoose").DefaultSchemaOptions> & import("../../models/order.model.js").IOrder & Required<{
     _id: import("mongoose").Types.ObjectId;
 }> & {
     __v: number;

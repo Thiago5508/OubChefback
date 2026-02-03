@@ -1,4 +1,4 @@
-import { Product } from "@/models/product.model";
+import { Product } from "../../models/product.model.js";
 export async function createProductService(data) {
     return await Product.create(data);
 }

@@ -1,4 +1,4 @@
-import { Tip } from "@/models/tip.model";
+import { Tip } from "../../models/tip.model.js";
 
 export async function createTipService(data: {
   user: string;

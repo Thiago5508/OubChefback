@@ -1,4 +1,4 @@
-import { Order } from "@/models/order.model";
+import { Order } from "../../models/order.model.js";
 export async function createOrderService(data) {
     return await Order.create(data);
 }

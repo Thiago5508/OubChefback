@@ -1,4 +1,4 @@
-import { Item } from "@/models/item.model";
+import { Item } from "../../models/item.model.js";
 
 export async function listItemsByOrderService(orderId: string , userId:string) {
   return await Item.find({ order: orderId, user:userId })

@@ -7,7 +7,7 @@ export declare function createItemService(data: {
     ingredients?: string[];
     price: number;
     quantity?: number;
-}): Promise<mongoose.Document<unknown, {}, import("@/models/item.model").IItem, {}, mongoose.DefaultSchemaOptions> & import("@/models/item.model").IItem & Required<{
+}): Promise<mongoose.Document<unknown, {}, import("../../models/item.model.js").IItem, {}, mongoose.DefaultSchemaOptions> & import("../../models/item.model.js").IItem & Required<{
     _id: mongoose.Types.ObjectId;
 }> & {
     __v: number;

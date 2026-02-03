@@ -1,4 +1,4 @@
-import { User } from '@/models/user.model';
+import { User } from '../models/user.model.js';
 import bcrypt from 'bcryptjs';
 export async function changePassword(userId, oldPassword, newPassword) {
     // Busca usuário pelo id

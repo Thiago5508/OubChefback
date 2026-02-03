@@ -1,4 +1,4 @@
-import { Category } from "@/models/category.model";
+import { Category } from "../../models/category.model.js";
 
 export const categoryService = {
   async create(data: { user: string; name: string }) {

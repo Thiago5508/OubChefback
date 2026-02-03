@@ -1,4 +1,4 @@
-import { Order } from "@/models/order.model";
+import { Order } from "../../models/order.model.js";
 import mongoose from "mongoose";
 export async function listAllOrderService({ userId, active, startDate, endDate, }) {
     const filter = {

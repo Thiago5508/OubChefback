@@ -1,4 +1,4 @@
-import { Category } from "@/models/category.model";
+import { Category } from "../../models/category.model.js";
 
 
 export async function listcategoryService(active: boolean , userId:string) {
