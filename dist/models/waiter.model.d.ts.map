@@ -1,0 +1,1 @@
+{"version":3,"file":"waiter.model.d.ts","sourceRoot":"","sources":["../../src/models/waiter.model.ts"],"names":[],"mappings":"AAAA,OAAO,QAAQ,MAAM,UAAU,CAAC;AAEhC,MAAM,WAAW,OAAQ,SAAQ,QAAQ,CAAC,QAAQ;IAChD,IAAI,EAAE,MAAM,CAAC;IACb,MAAM,EAAE,OAAO,CAAC;IAChB,IAAI,EAAE,QAAQ,CAAC,KAAK,CAAC,QAAQ,CAAC;CAC/B;AASD,eAAO,MAAM,MAAM;;;;gBAAkD,CAAC"}
