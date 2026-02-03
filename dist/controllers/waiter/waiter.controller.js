@@ -1,4 +1,4 @@
-import { createWaiterService } from "@/services/waiter/waiter.service";
+import { createWaiterService } from "../../services/waiter/waiter.service.js";
 export async function createWaiterController(req, res) {
     const userId = req.user?._id;
     const { name } = req.body;

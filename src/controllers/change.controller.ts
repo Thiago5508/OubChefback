@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { changePassword } from '@/services/change.service';
+import { changePassword } from '../services/change.service.js';
 
 export async function changePasswordController(req: Request, res: Response):Promise<void> {
   const userId = req.user?._id; // obtido do JWT pelo middleware

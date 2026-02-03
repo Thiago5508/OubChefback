@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { listAllOrderService } from "@/services/order/listAllorder.service";
+import { listAllOrderService } from "../../services/order/listAllorder.service.js";
 
 export async function listAllorderController(req: Request, res: Response) {
   const userId = req.user?._id;

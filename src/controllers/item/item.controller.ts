@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { createItemService } from "@/services/item/item.service";
+import { createItemService } from "../../services/item/item.service.js";
 
 export async function createItemController(req: Request, res: Response) {
   const user = req.user?._id;

@@ -1,4 +1,4 @@
-import { createTipService } from "@/services/tip/tip.service";
+import { createTipService } from "../../services/tip/tip.service.js";
 export async function createTipController(req, res) {
     try {
         const userId = req.user?._id;

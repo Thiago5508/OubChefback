@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { createIngredientService } from "@/services/ingredient/ingredient.service";
+import { createIngredientService } from "../../services/ingredient/ingredient.service.js";
 
 export async function createIngredientController(req: Request, res: Response) {
   try {

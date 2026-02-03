@@ -1,4 +1,4 @@
-import { categoryService } from "@/services/category/category.service";
+import { categoryService } from "../../services/category/category.service.js";
 export async function createCategoryController(req, res) {
     const userId = req.user?._id;
     const { name } = req.body;

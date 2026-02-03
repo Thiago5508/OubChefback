@@ -1,4 +1,4 @@
-import { createIngredientService } from "@/services/ingredient/ingredient.service";
+import { createIngredientService } from "../../services/ingredient/ingredient.service.js";
 export async function createIngredientController(req, res) {
     try {
         const userId = req.user?._id;

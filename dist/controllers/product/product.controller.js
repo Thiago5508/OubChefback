@@ -1,4 +1,4 @@
-import { createProductService } from "@/services/product/product.service";
+import { createProductService } from "../../services/product/product.service.js";
 export async function createProductController(req, res) {
     try {
         const user = req.user?._id;

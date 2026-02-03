@@ -1,4 +1,4 @@
-import { createTableService } from "@/services/table/table.service";
+import { createTableService } from "../../services/table/table.service.js";
 export async function createTableController(req, res) {
     const userId = req.user?._id;
     const { number, letter } = req.body;

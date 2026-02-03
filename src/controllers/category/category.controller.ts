@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { categoryService } from "@/services/category/category.service";
+import { categoryService } from "../../services/category/category.service.js";
 
 export async function createCategoryController(req: Request, res: Response) {
     const userId = req.user?._id; 

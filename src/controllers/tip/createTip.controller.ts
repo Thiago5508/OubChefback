@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { createTipService } from "@/services/tip/tip.service";
+import { createTipService } from "../../services/tip/tip.service.js";
 
 export async function createTipController(req: Request, res: Response) {
   try {

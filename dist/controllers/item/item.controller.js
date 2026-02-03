@@ -1,4 +1,4 @@
-import { createItemService } from "@/services/item/item.service";
+import { createItemService } from "../../services/item/item.service.js";
 export async function createItemController(req, res) {
     const user = req.user?._id;
     if (!user) {

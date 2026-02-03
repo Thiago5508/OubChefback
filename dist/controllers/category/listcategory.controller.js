@@ -1,4 +1,4 @@
-import { listcategoryService } from "@/services/category/listcategory.service";
+import { listcategoryService } from "../../services/category/listcategory.service.js";
 export async function listCategoryController(req, res) {
     const user = req.user?._id;
     const active = true;

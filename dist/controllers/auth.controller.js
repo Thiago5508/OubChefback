@@ -1,4 +1,4 @@
-import { authenticateUser } from '@/services/auth.service';
+import { authenticateUser } from '../services/auth.service.js';
 export async function loginController(req, res) {
     const { identifier, password } = req.body;
     try {

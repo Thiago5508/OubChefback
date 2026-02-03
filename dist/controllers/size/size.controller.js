@@ -1,4 +1,4 @@
-import { createSizeService } from "@/services/size/size.service";
+import { createSizeService } from "../../services/size/size.service.js";
 export async function createSizeController(req, res) {
     const userId = req.user?._id;
     const { category, name, price } = req.body;

@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { createSizeService } from "@/services/size/size.service";
+import { createSizeService } from "../../services/size/size.service.js";
 
 export async function createSizeController(req: Request, res: Response) {
   const userId = req.user?._id; 

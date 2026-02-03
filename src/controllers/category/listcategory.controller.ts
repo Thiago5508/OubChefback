@@ -1,6 +1,6 @@
 import type { Request, Response } from "express";
 
-import { listcategoryService } from "@/services/category/listcategory.service";
+import { listcategoryService } from "../../services/category/listcategory.service.js";
 
 export async function listCategoryController(req: Request, res: Response) {
   const user = req.user?._id;

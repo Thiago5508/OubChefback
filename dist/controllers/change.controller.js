@@ -1,4 +1,4 @@
-import { changePassword } from '@/services/change.service';
+import { changePassword } from '../services/change.service.js';
 export async function changePasswordController(req, res) {
     const userId = req.user?._id; // obtido do JWT pelo middleware
     const { oldPassword, newPassword } = req.body;

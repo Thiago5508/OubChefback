@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { createOrderService } from "@/services/order/order.service";
+import { createOrderService } from "../../services/order/order.service.js";
 
 export async function createOrderController(req: Request, res: Response) {
   const userId = req.user?._id;

@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { createTableService } from "@/services/table/table.service";
+import { createTableService } from "../../services/table/table.service.js";
 
 export async function createTableController(req: Request, res: Response) {
   const userId = req.user?._id;

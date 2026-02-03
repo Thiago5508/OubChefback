@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { listItemsByOrderService } from "@/services/item/listbyorder.service";
+import { listItemsByOrderService } from "../../services/item/listbyorder.service.js";
 
 export async function listItemsByOrderController(req: Request, res: Response) {
   const user = req.user?._id;

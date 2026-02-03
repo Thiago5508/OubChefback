@@ -1,4 +1,4 @@
-import { createUser } from '@/services/user.service';
+import { createUser } from '../services/user.service.js';
 export async function createUserController(req, res) {
     try {
         const user = await createUser(req.body);

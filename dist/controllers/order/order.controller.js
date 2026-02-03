@@ -1,4 +1,4 @@
-import { createOrderService } from "@/services/order/order.service";
+import { createOrderService } from "../../services/order/order.service.js";
 export async function createOrderController(req, res) {
     const userId = req.user?._id;
     const { table, customerName, total, waiter, tip } = req.body;

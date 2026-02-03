@@ -1,6 +1,6 @@
 // src/controllers/product.controller.ts
 import type { Request, Response } from "express";
-import { createProductService } from "@/services/product/product.service";
+import { createProductService } from "../../services/product/product.service.js";
 
 export async function createProductController (req: Request, res: Response) {
     try {

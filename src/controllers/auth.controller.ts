@@ -1,5 +1,5 @@
 import type { Request, Response } from 'express';
-import { authenticateUser } from '@/services/auth.service';
+import { authenticateUser } from '../services/auth.service.js';
 
 export async function loginController(req: Request, res: Response) {
   const { identifier, password } = req.body;

@@ -1,5 +1,5 @@
 import type { Request, Response } from "express";
-import { createWaiterService } from "@/services/waiter/waiter.service";
+import { createWaiterService } from "../../services/waiter/waiter.service.js";
 
 export async function createWaiterController(req: Request, res: Response) {
   const userId = req.user?._id;

@@ -1,4 +1,4 @@
-import { listItemsByOrderService } from "@/services/item/listbyorder.service";
+import { listItemsByOrderService } from "../../services/item/listbyorder.service.js";
 export async function listItemsByOrderController(req, res) {
     const user = req.user?._id;
     if (!user) {

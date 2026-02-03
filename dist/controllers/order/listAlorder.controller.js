@@ -1,4 +1,4 @@
-import { listAllOrderService } from "@/services/order/listAllorder.service";
+import { listAllOrderService } from "../../services/order/listAllorder.service.js";
 export async function listAllorderController(req, res) {
     const userId = req.user?._id;
     const { active, startDate, endDate } = req.query;
