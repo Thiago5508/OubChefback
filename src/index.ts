@@ -20,11 +20,12 @@ app.get('/', (_req:Request, res:Response) => {
   res.status(200).send('Welcome to Oubchef backend!');
 });
 
-app.use((err:Error ,_req:Request, res:Response, _next: NextFunction) => {
+app.use(async(err:Error ,_req:Request, res:Response, _next: NextFunction) => {
+  await connectDB();
   console.error(err.stack);
   res.status(500).json({ status:'error', message: err.message || 'Erro interno do servidor' });
 });
 
-connectDB();
+
 
 export default app;

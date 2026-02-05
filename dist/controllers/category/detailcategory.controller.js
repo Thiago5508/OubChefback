@@ -1,4 +1,4 @@
-import { detailCategoryService } from "../../services/category/detail.category.service";
+import { detailCategoryService } from "../../services/category/detail.category.service.js";
 export async function detailCategoryController(req, res) {
     const user = req.user?._id;
     if (!user) {
