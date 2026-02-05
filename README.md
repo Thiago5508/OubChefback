@@ -19,3 +19,11 @@ variaveis foram removidas por questão de segurança!
 ## Feature: Access Control
 
 Implementando controle de acesso utilizando como base Role-Based Access Control .
+
+## Feature: Product creat/list
+
+Implementação do sistema de criação de Produtos e listagem .
+
+## Feature: Category creat/list
+
+Implementação do sistema de criação das categorias e listagem utilizando Dropbox .

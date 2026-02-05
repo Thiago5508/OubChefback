@@ -17,7 +17,7 @@ app.use(routes);
 app.use(express.static(path.join(process.cwd(), "public")))
 
 app.get('/', (_req:Request, res:Response) => {
-  res.status(200).send('Welcome to ContrateMy backend!');
+  res.status(200).send('Welcome to Oubchef backend!');
 });
 
 app.use((err:Error ,_req:Request, res:Response, _next: NextFunction) => {
