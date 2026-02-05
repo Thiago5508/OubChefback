@@ -1,8 +1,6 @@
-import { Category } from "../../models/category.model.js";
-export async function DetailCategoryService(CategoryId: string , userId:string) {
-  return await Category.find({ Category: CategoryId, user:userId })
-  .populate("products")
-  .populate("size")
-  .populate("ingredients", "name extraPrice")
+
+import { Product } from "../../models/product.model.js";
+export async function detailCategoryService(CategoryId: string , userId:string) {
+  return await Product.find({ category: CategoryId, user:userId },{ _id: 1, name: 1 })
   .sort({ createdAt: -1 });
 }

@@ -26,4 +26,4 @@ Implementação do sistema de criação de Produtos e listagem .
 
 ## Feature: Category creat/list
 
-Implementação do sistema de criação das categorias e listagem utilizando Dropbox .
+Implementação do sistema de criação das categorias, listagem e detalhamento .
