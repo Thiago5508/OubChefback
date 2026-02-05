@@ -12,3 +12,6 @@ node_modules/
 *.tsbuildinfo
 .env
 app-example
+
+#atalhos github até eu decorar
+.githubquicly

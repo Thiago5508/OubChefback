@@ -16,6 +16,7 @@ import { listItemsByOrderController } from './controllers/item/listbyorder.contr
 import { listAllorderController } from './controllers/order/listAlorder.controller.js';
 import { listCategoryController } from './controllers/category/listcategory.controller.js';
 import { listProductController } from './controllers/product/listproduct.controller.js';
+import { detailCategoryController } from './controllers/category/detailcategory.controller.js';
 const routes = Router();
 //user
 routes.post('/createuser', createUserController);
@@ -27,6 +28,7 @@ routes.get('/product/list', authMiddleware, listProductController);
 //category
 routes.post("/category/create", authMiddleware, createCategoryController);
 routes.get("/category/list", authMiddleware, listCategoryController);
+routes.get('/category/detail/:CategoryId', authMiddleware, detailCategoryController);
 //ingredient
 routes.post("/ingredient/create", authMiddleware, createIngredientController);
 //size
