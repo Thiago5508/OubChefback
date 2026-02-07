@@ -1,20 +1,12 @@
-import { Ingredient } from "../../models/ingredient.model.js";
-import { Size } from "../../models/size.model.js";
+import { Product } from "../../models/product.model.js";
 
-export async function detailProductService(ProductId: string , userId:string) {
-    const [ingredients, sizes] = await Promise.all([
-    Ingredient.find(
-      { product: ProductId, user: userId },
-      { _id: 1, name: 1 }
-    ).sort({ createdAt: -1 }),
+export async function detailProductService(ProductId: string, userId: string) {
+  const product = await Product.findOne({ _id: ProductId, user: userId })
+    .populate("category", "name")
+    .select("name description basePrice active category");
 
-    Size.find(
-      { product: ProductId, user: userId },
-      { _id: 1, name: 1 }
-    ).sort({ createdAt: -1 })
-  ]);
-  return {
-    ingredients,
-    sizes
+  if (!product) {
+    throw new Error("PRODUCT_NOT_FOUND");
   }
+  return {product};
 }
