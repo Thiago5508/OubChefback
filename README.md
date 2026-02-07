@@ -13,6 +13,9 @@
 - npm install
 - npm run dev
 
+## Fix
+Resolvendo variacoes de deploy rm produção.
+
 ## variaveis de Ambiente
 variaveis foram removidas por questão de segurança!
 

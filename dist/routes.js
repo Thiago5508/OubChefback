@@ -17,6 +17,7 @@ import { listAllorderController } from './controllers/order/listAlorder.controll
 import { listCategoryController } from './controllers/category/listcategory.controller.js';
 import { listProductController } from './controllers/product/listproduct.controller.js';
 import { detailCategoryController } from './controllers/category/detailcategory.controller.js';
+import { detailProductController } from './controllers/product/detail.product.controller.js';
 const routes = Router();
 //user
 routes.post('/createuser', createUserController);
@@ -25,6 +26,7 @@ routes.put('/auth/changepassword', authMiddleware, changePasswordController);
 //products
 routes.post('/product/create', authMiddleware, createProductController);
 routes.get('/product/list', authMiddleware, listProductController);
+routes.get('/product/detail/:ProductId', authMiddleware, detailProductController);
 //category
 routes.post("/category/create", authMiddleware, createCategoryController);
 routes.get("/category/list", authMiddleware, listCategoryController);
