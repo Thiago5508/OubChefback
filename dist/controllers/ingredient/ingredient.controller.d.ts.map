@@ -1,1 +1,1 @@
-{"version":3,"file":"ingredient.controller.d.ts","sourceRoot":"","sources":["../../../src/controllers/ingredient/ingredient.controller.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAGjD,wBAAsB,0BAA0B,CAAC,GAAG,EAAE,OAAO,EAAE,GAAG,EAAE,QAAQ,+CAqB3E"}
+{"version":3,"file":"ingredient.controller.d.ts","sourceRoot":"","sources":["../../../src/controllers/ingredient/ingredient.controller.ts"],"names":[],"mappings":"AAAA,OAAO,KAAK,EAAE,OAAO,EAAE,QAAQ,EAAE,MAAM,SAAS,CAAC;AAGjD,wBAAsB,0BAA0B,CAAC,GAAG,EAAE,OAAO,EAAE,GAAG,EAAE,QAAQ,+CAsB3E"}

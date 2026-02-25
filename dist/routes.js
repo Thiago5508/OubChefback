@@ -33,6 +33,7 @@ routes.get("/category/list", authMiddleware, listCategoryController);
 routes.get('/category/detail/:CategoryId', authMiddleware, detailCategoryController);
 //ingredient
 routes.post("/ingredient/create", authMiddleware, createIngredientController);
+routes.get("/ingredient/list", authMiddleware, listCategoryController);
 //size
 routes.post("/size/create", authMiddleware, createSizeController);
 //mesa

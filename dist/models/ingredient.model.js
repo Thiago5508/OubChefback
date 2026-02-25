@@ -4,6 +4,7 @@ const ingredientSchema = new mongoose.Schema({
     name: { type: String, required: true },
     category: { type: mongoose.Schema.Types.ObjectId, ref: "Category", required: true },
     extraPrice: { type: Number, default: 0 },
+    description: { type: String },
     active: { type: Boolean, default: true }
 });
 export const Ingredient = mongoose.model("Ingredient", ingredientSchema);

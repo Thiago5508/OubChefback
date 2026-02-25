@@ -5,6 +5,7 @@ export interface IIngredient extends mongoose.Document {
     extraPrice: number;
     category: mongoose.Types.ObjectId;
     active: boolean;
+    description?: string;
 }
 export declare const Ingredient: mongoose.Model<IIngredient, {}, {}, {}, mongoose.Document<unknown, {}, IIngredient, {}, mongoose.DefaultSchemaOptions> & IIngredient & Required<{
     _id: mongoose.Types.ObjectId;
