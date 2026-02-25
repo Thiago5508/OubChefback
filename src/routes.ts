@@ -38,7 +38,7 @@ routes.get('/category/detail/:CategoryId',authMiddleware,detailCategoryControlle
 
 //ingredient
 routes.post("/ingredient/create", authMiddleware, createIngredientController);
-
+routes.get("/ingredient/list", authMiddleware, listCategoryController);
 //size
 routes.post("/size/create", authMiddleware, createSizeController);
 

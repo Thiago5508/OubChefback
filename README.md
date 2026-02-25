@@ -14,7 +14,7 @@
 - npm run dev
 
 ## Fix
-Resolvendo variacoes de deploy rm produção.
+Resolvendo variacoes de deploy em produção.
 
 ## variaveis de Ambiente
 variaveis foram removidas por questão de segurança!
@@ -30,3 +30,7 @@ Implementação do sistema de criação de Produtos e listagem .
 ## Feature: Category creat/list
 
 Implementação do sistema de criação das categorias, listagem e detalhamento .
+
+## Feature: Ingredient creat/list
+
+Implementação do sistema de criação das Ingredients, listagem e detalhamento .

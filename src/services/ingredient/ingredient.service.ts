@@ -5,6 +5,7 @@ export async function createIngredientService (data: {
     category:string;
     name: string;
     extraPrice?: number;
+    description?: string;
   }) {
     return await Ingredient.create(data);
   }

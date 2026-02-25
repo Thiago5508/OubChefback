@@ -4,7 +4,7 @@ import { createIngredientService } from "../../services/ingredient/ingredient.se
 export async function createIngredientController(req: Request, res: Response) {
   try {
     const userId = req.user?._id;
-    const { category, name, extraPrice } = req.body;
+    const { category, name, extraPrice,description } = req.body;
 
     if (!userId || !category || !name) {
       return res.status(400).json({ error: "Missing required fields" });
@@ -14,7 +14,8 @@ export async function createIngredientController(req: Request, res: Response) {
       user: userId,
       category,
       name,
-      extraPrice
+      extraPrice,
+      description,
     });
 
     return res.status(201).json({message:'Ingrediente criado com sucesso' ,ingredient});
