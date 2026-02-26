@@ -2,3 +2,6 @@ git checkout main
 git pull origin main
 git merge {nome da branch}
 git push origin main
+
+useradmin
+wumua
