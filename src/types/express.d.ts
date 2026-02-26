@@ -1,5 +1,5 @@
 import 'express';
-import type { JwtPayload } from '@/middlewares/auth.middleware';
+import type { JwtPayload } from '../middlewares/auth.middleware.js';
 
 declare global {
   namespace Express {
