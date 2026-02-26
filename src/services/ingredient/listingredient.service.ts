@@ -1,4 +1,4 @@
-import { Ingredient } from "@/models/ingredient.model"; 
+import { Ingredient } from "../../models/ingredient.model.js"; 
 
 
 export async function listIngredientService(active: boolean , userId:string) {

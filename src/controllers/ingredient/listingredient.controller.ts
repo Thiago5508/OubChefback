@@ -1,4 +1,4 @@
-import { listIngredientService } from "../../services/ingredient/listingredient.service";
+import { listIngredientService } from "../../services/ingredient/listingredient.service.js";
 import type { Request, Response } from "express";
 
 export async function listIngredientController(req: Request, res: Response) {

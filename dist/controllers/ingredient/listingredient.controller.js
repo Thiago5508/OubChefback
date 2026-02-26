@@ -1,4 +1,4 @@
-import { listIngredientService } from "../../services/ingredient/listingredient.service";
+import { listIngredientService } from "../../services/ingredient/listingredient.service.js";
 export async function listIngredientController(req, res) {
     const user = req.user?._id;
     const active = true;
