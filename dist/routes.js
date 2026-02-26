@@ -18,6 +18,7 @@ import { listCategoryController } from './controllers/category/listcategory.cont
 import { listProductController } from './controllers/product/listproduct.controller.js';
 import { detailCategoryController } from './controllers/category/detailcategory.controller.js';
 import { detailProductController } from './controllers/product/detail.product.controller.js';
+import { listIngredientController } from './controllers/ingredient/listingredient.controller.js';
 const routes = Router();
 //user
 routes.post('/createuser', createUserController);
@@ -33,7 +34,7 @@ routes.get("/category/list", authMiddleware, listCategoryController);
 routes.get('/category/detail/:CategoryId', authMiddleware, detailCategoryController);
 //ingredient
 routes.post("/ingredient/create", authMiddleware, createIngredientController);
-routes.get("/ingredient/list", authMiddleware, listCategoryController);
+routes.get("/ingredient/list", authMiddleware, listIngredientController);
 //size
 routes.post("/size/create", authMiddleware, createSizeController);
 //mesa
