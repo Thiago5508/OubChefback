@@ -25,6 +25,7 @@ app.use(express.static(path.join(process.cwd(), "public")))
 app.get('/', (_req:Request, res:Response) => {
   res.status(200).send('Welcome to Oubchef backend!');
 });
+app.get('/favicon.ico', (_req, res) => res.status(204).end());
 
 app.use(async(err:Error ,_req:Request, res:Response, _next: NextFunction) => {
   console.error(err.stack);

@@ -19,6 +19,7 @@ import { listProductController } from './controllers/product/listproduct.control
 import { detailCategoryController } from './controllers/category/detailcategory.controller.js';
 import { detailProductController } from './controllers/product/detail.product.controller.js';
 import { listIngredientController } from './controllers/ingredient/listingredient.controller.js';
+import { listSizeController } from './controllers/size/listsize.controller.js';
 const routes = Router();
 //user
 routes.post('/createuser', createUserController);
@@ -37,6 +38,7 @@ routes.post("/ingredient/create", authMiddleware, createIngredientController);
 routes.get("/ingredient/list", authMiddleware, listIngredientController);
 //size
 routes.post("/size/create", authMiddleware, createSizeController);
+routes.get("/size/list", authMiddleware, listSizeController);
 //mesa
 routes.post("/table/create", authMiddleware, createTableController);
 //waiter
