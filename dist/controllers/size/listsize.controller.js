@@ -1,4 +1,4 @@
-import { listSizeService } from "../../services/size/listsize.service";
+import { listSizeService } from "../../services/size/listsize.service.js";
 export async function listSizeController(req, res) {
     const user = req.user?._id;
     const active = true;

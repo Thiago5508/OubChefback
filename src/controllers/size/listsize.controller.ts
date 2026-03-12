@@ -1,4 +1,4 @@
-import { listSizeService } from "@/services/size/listsize.service";
+import { listSizeService } from "../../services/size/listsize.service.js";
 import type { Request, Response } from "express";
 
 export async function listSizeController(req: Request, res: Response) {
